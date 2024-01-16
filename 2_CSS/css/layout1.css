@@ -1,0 +1,141 @@
+.area1 {background-color: red;}
+.area2 {background-color: orangered;}
+.area3 {background-color: yellow;}
+.area4 {background-color: green;}
+.area5 {background-color: blue;}
+/*inline으로 변경하는 방법*/
+.inline {
+    display: inline;
+}
+/*block으로 변경하는 방법*/
+
+.block{
+    display: block;
+
+    width: 150px;
+    height: 150px;
+}
+
+/*none사용하여 화면에 보이지 않게 하는 방법 
+눈에 보이지 않을 뿐 요소는 존재하고 있음*/
+.inline-block {
+    display: none;
+}
+
+/*다시 inline으로 변경하는 방법*/
+.inline-block {
+    display: inline-block;
+}
+
+/*감싸는 영역 요소*/
+#container-1 {
+    border: 3px solid black;
+    width: 323px;
+    height: 472px;
+}
+
+/* 내부에 영역을 분할할 요소 */
+.div-1{
+    height: 50%;
+    width: 100%;
+
+    border: 1px dashed hotpink;
+}
+
+
+#container-1>.div-1:first-of-type {
+    background-color: red;
+    height: 30%;
+}
+#container-1>.div-1:last-of-type {
+    background-color: blue;
+    height: 70%;
+}
+
+/*상하 3분할*/
+#container-2 {
+    border: 3px solid black;
+    width: 323px;
+    height: 472px;
+}   
+
+/*block 형식의 요소는 별도의 width가 지정되지 않으면
+항상 100%
+
+그래서
+
+.div-2{
+    width:100% 
+} 
+이거 안 써도 됨*/
+
+#container-2>.div-2:first-of-type{
+    background-color: yellowgreen;
+    height: 20%;
+}
+
+/* 위엔 내가 한 것 밑 강사님이 하신 것
+#container-2>.div-2:nth-of-type(1){
+    background-color: yellowgreen;
+    height: 20%;
+}*/
+
+
+#container-2>.div-2:nth-last-of-type(2n){
+    background-color: coral;
+    height: 30%;
+}
+
+
+/*#container-2>.div-2:nth-of-type(2){
+    background-color: coral;
+    height: 30%;
+}*/
+
+
+#container-2>.div-2:last-of-type{
+    background-color: skyblue;
+    height: 50%;
+}
+
+/*#container-2>.div-2:nth-of-type(3){
+    background-color: skyblue;
+    height: 50%;
+}*/
+
+
+/* 좌우 분할 */
+
+#container-3 {
+    border: 5px solid red;
+    width: 400px;
+    height: 200px;
+}
+
+.div-3 {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+#container-3 > .div-3:first-child{
+    background-color: pink;   
+}
+#container-3 > .div-3:last-child{
+    background-color: skyblue;
+    
+}
+
+.div-4{
+    border: 3px solid black;
+    height: 100px;
+}
+
+#test4{
+    background-color: deeppink;
+
+    /* visibility: hidden; */
+    display: none;
+    /* display:none; 은 화면에서 요소가 사라진 것 처럼 보이는것
+     visibility:hidden; 은 그 자리만 비워져서 보임 투명인 상태 */
+}
