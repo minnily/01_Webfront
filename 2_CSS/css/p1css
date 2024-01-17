@@ -1,0 +1,23 @@
+.block {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.block tr:last-child td:first-child,
+.block tr:last-child td:nth-child(2),
+.block tr:nth-child(4) td:first-child,
+.block tr:nth-child(3) td:first-child
+
+{
+    background-color: indianred;
+}
+
+.block tr:last-child td:nth-child(3),
+.block tr:last-child td:nth-child(4),
+.block tr:nth-child(4) td:nth-child(2),
+.block tr:nth-child(4) td:nth-child(3)
+
+{
+    background-color: skyblue;
+}

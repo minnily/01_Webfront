@@ -1,0 +1,48 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.apple{
+    display: flex;
+    width: 850px;
+    height: 430px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.a {
+    flex-basis: 20%;
+    background-color: aquamarine;
+}
+.b{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.b1{
+    flex-basis: 30%;
+    background-color: aqua;
+}
+.b2{
+    flex-basis: 70%;
+    display: flex;
+    background-color: yellow;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.b2a, .b2b, .b2c{
+    border: 1px solid black;
+    width: 30%;
+    height: 50%;
+    
+}
+.c {
+    flex-basis: 20%;
+    background-color: aquamarine;
+    
+}
+
+
+

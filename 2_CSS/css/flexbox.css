@@ -1,0 +1,105 @@
+div{
+    border : 1px solid black;
+    box-sizing: border-box; 
+    /* content + padding + border 합으로 width/height 지정 */
+}
+
+.item{
+    width: 75px;
+    height: 75px;
+}
+
+.item1{background-color: red;}
+.item2{background-color: orangered;}
+.item3{background-color: orange;}
+.item4{background-color: yellow;}
+.item5{background-color: yellowgreen;}
+.item6{background-color: green;}
+.item7{background-color: lightblue;}
+.item8{background-color: blue;}
+.item9{background-color: violet;}
+
+
+.flex-container {
+    height: 700px;
+
+    display: flex;
+    /* 부모 역할에만 줄수 있는 속성 display: flex;
+    item(내부요소==자식)을 감싸는 요소의 형식을 flex로 변경했다.
+    ->item에 자동으로 지정된margin 요소가 모두 사라지고 content영역만큼의 크기만 가지게 됨-> inline*/
+    
+    /* flex-direction (부모 전용 속성) : '메인축(중심축)의 방향'과 시작 위치를 지정하는 속성
+
+            -flex-direction: row; => 기본값, 방향이 행방향(가로 ==row)
+
+            -flex-direction: row-reverse; => 행 방향(가로)가 순서 반대로 설정되는 속성
+
+            -flex-direction: column; => 열방향(세로)로 바꾸는 속성
+
+            -flex-direction: column-reverse; =>열 방향(세로)의 순서가 반대로 설정되는 속성 */
+
+    /* flex-wrap (부모 전용 속성) : 내부 item들을 포장하는 속성
+            item들이 강제로 한줄에 배치되게 할지, 한줄을 벗어나 여러줄로 배치할 것인지 지정한다.
+            
+            -flex-warp:nowrap; : item을 한줄로 배치 (기본값), 화면크기가 변동되어도 한 줄에 배치되는 속성
+            
+            -flex-wrap: wrap; : (화면의 크기가 변동되어도)item을 여러줄로 배치하는 것
+            
+            -flex-wrap: wrap-reverse; item을 여러 줄로 배치(뒤에서 배치)
+            */
+        
+
+    /* justify-content : 메인축 방향으로 item의 '정렬 방법'을 조정함 
+        
+            -justify-content: flex-start; 메인축 방향으로 앞에서부터 정렬 (기본값)
+            
+            -justify-content: flex-end; 메인축 방향으로 뒤 붙어서 정렬
+
+            -justify-content: center; 메인축 방향으로 가운데 정렬
+
+            /* item 주위에 메인축 방향 양쪽으로 일정한 크기의 공간을 추가
+            -> 양끝은 조금, item 중간은 넓게 떨어져있음 
+            -> 브라우저 크기에 따라 변함
+            */
+            
+            /* -justify-content: space-around; 양 끝에는 여백을 가지고 있고 아이템들 사이의 간격을 주는것
+            양끝 여백과 아이템들 사이의 거리는 다르다.
+
+            -justify-content: space-evenly; 양끝의 여백과 아이템들의 간격이 동일한 것 
+
+            -justify-content: space-between; 양 끝쪽의 여백없이(끝을 붙인상태로) 아이템들의 간격을 일정하게 
+                                            정리한 것
+
+
+            */
+    /* align-items : item들을 교차축 방향으로 정렬하는 방법을 지정하는 속성  (부모요소에 적용되는 속성)*/
+        }
+
+     #con {
+        display: flex;
+        width: 450px;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+        /* con이라는  크기 450*450의 블록이 만들어짐*/
+     } 
+
+     #center {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+            /* con 안에 center라는 크기 80*80의 블록이 만들어짐*/
+    }
+
+    /* item(자식)에게 주는 flex 속성
+     */
+
+     .basis-20 {flex-basis: 20%;}
+     .basis-30 {flex-basis: 30%;}
+     .basis-50 {flex-basis: 50%;}
+
+
+     /* order: 숫자; 
+        order: 0; (기본값)
+    */
+     

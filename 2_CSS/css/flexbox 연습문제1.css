@@ -1,0 +1,44 @@
+
+div{
+    border: 1px solid black;
+}
+
+.all{
+    display: flex;
+
+    width: 500px;
+    height: 350px;
+
+    /* 열방향이니 방향 바꿔주기 */
+    flex-direction: column;
+
+    border: 1px solid black;
+    /* background-color: beige; */
+}
+
+.box1,.box3{
+    background-color: wheat;  
+    flex-basis: 20%;  
+}
+
+.box2 
+/* box2_1, box2_2,box2_3의 부모면서
+box2의 자식 */
+{
+    flex-basis: 60%;
+    
+    display: flex; 
+    /* 유연하게 움직이게 적용시키기 */
+}
+.box2-1 {
+    background-color: skyblue;
+    flex-basis: 30%;
+}
+.box2-2 {
+    background-color: salmon;
+    flex-basis: 50%;
+}
+.box2-3 {
+    background-color: sandybrown;
+    flex-basis: 20%;
+}

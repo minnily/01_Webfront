@@ -1,0 +1,43 @@
+div{
+    border: 1px solid black;
+}
+
+.a{
+    display: flex;
+
+    width: 600px;
+    height: 450px;
+    flex-direction: column; 
+   
+    border: 1px solid black;    
+}
+
+.b1{
+    flex-basis: 20%;
+    background-color: red;  
+}
+
+.b2{
+    display: flex;
+    flex-basis: 80%;
+    
+}
+.c1{
+    flex-basis: 30%;
+    background-color: yellow;   
+}
+.c2{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column; 
+           
+}
+
+.d1{ 
+    flex-basis: 80%; 
+    background-color:greenyellow;   
+}
+.d2{ 
+    flex-basis: 20%; 
+    background-color:blue;   
+}

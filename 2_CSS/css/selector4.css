@@ -49,7 +49,7 @@ font-size : 30px ;}
     /****************************/
 
     /* 형태 구조 선택자*/
-    /* first-od type */
+    /* first-of type */
     #test2 > p:first-of-type {
         background-color: orange;
     }

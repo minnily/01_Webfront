@@ -1,0 +1,48 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.a{
+    display: flex;
+    width: 650px;
+    height: 430px;
+    border: 1px solid black;
+    
+    flex-direction: column;}
+
+.b1{
+    flex-basis: 30%;
+    background-color: yellow;}
+
+.b2{
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: row;
+}    
+.c1{
+    flex-basis: 30%;
+    background-color: skyblue;   
+    
+}    
+.c2{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}  
+.d1{
+    flex-basis: 50%;
+    display: flex;
+    }
+.d2{
+    flex-basis: 50%;
+    background-color: pink;
+}
+.e1{
+    flex-basis: 70%;
+    background-color: aquamarine;
+}
+.e2{
+    flex-basis: 30%;
+    background-color: red;
+}

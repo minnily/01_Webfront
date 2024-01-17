@@ -1,0 +1,12 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.bee {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 460px;
+}
