@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+body{
+    margin: auto;
+}
+main{
+    width: 2000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
