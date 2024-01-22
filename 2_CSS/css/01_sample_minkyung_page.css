@@ -54,9 +54,11 @@ header > section:nth-of-type(3){
     height: 25px;
     background-color: skyblue;
     border: none;
-
     color: white;
+    
 }
+
+
 
 #search2 {
     border: none;
