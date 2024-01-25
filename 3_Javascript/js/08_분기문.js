@@ -17,7 +17,9 @@ function check2(){
 
         console.log("i",i++);
 
-        if(i > 10) break;
+        if(i > 10) {
+            break;
+        }
     }
 }
 
@@ -48,21 +50,31 @@ function check4(){
 //-각 줄에서 4의 배수는 건너뛰기
 //-3번째 줄 출력 후 멈추기
 function check5(){
-    for(let row = 1; row<=5; row++);{
+    for(let row = 1; row<=5; row++){
         let str = "";
         for(let col = 0; col <=9; col++){
             str += col;
         //을 제외한 4의 배수
         if(col !=0 && col % 4 == 0) continue;
 
-        str += col;
+        // str += col;
     
         }
         console.log(str);
         //3번째 줄 출력 후 멈춤
-        if(row == 3) break;
+        if(row == 3) break; 
+
+        console.log(str);
+        
+        
     }
 
+
+function check5(){
+    for(let num =1; num <= 5; num++){
+        
+    }
+}
 
 
 }

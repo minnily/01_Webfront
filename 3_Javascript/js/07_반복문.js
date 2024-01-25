@@ -115,7 +115,7 @@ function executeFn3(){
     for(let num = 1; num <= 9; num++){
     // num이 1부터 인 이유는 구구단의 시작이 0*1~0*9로 시작하기 때문
     //단은 input 곱해지는 값 num으로 작성할 예정 += :누적시키는것
-    ul.innerHTML += `<li>${input} x ${num} = ${input * num} </li>`;
+    ul. innerHTML += `<li>${input} x ${num} = ${input * num} </li>`;
 
     }
 }    
