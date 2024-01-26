@@ -228,3 +228,12 @@ function check18(){
         x--;;
     }
 }
+
+
+// ------------------------------------------------------
+//화살표 함수 
+
+//클래스가 arrow인 요소를 모두 얻어옴(배열)
+const arrowList = document.querySelectorAll("arrow");
+
+console.log(arrowList);
