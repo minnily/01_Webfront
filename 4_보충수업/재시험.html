@@ -8,6 +8,56 @@
 </head>
 
 <body>
+    <div>
+        <table border="1px ">
+            <tr>
+                <th>너비 : </th>
+                <td> <input type="number" class="width">px</td>
+                <th>높이 : </th>
+                <td> <input type="number" class="height">px</td>
+            </tr>
+            <tr>
+                <th>글자크기 : </th>
+                <td><input type="number" class="font_size">px</td>
+                <th>굵기 : </th>
+                <td><input type="radio" name="fw" class="normal"></td>
+                <td><input type="radio" name="fw "class="bold"></td>
+            </tr>
+            <tr>
+                <th>글자색 : </th>
+                <td><input type="text" class="color">px</td>
+                <th>배경색 : </th>
+                <td><input type="text" class="background">px</td>
+            </tr>
+            <tr>
+                <th colspan="2"> 가로정렬 : </th>
+                <td colspan="3">
+                    <input type="radio" name="row" value = left class="row">
+                    <input type="radio" name="row" value = felx-start class="row">
+                    <input type="radio" name="row" value = right class="row">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"> 세로정렬 : </th>
+                <td colspan="3"> 
+                    <input type="radio"name="col" value="up" class="col">
+                    <input type="radio"name="col" value="center" class="col">
+                    <input type="radio"name="col" value="down" class="col">
+                </td>
+            </tr>
+            <tr>  
+                <th> 출력문자열 :</th>
+                    <td>
+                        <input type="text" class="text">
+                    </td>
+            </tr>     
+        </table>
+        
+        <button id="btn"> 적용하기</button> 
+
+        <div id="box"></div>
+
+    </div>
  <script src="/재시험.js"></script> 
 </body>
 
