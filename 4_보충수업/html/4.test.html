@@ -11,10 +11,37 @@
     <button id="btn">click</button>
 
     <script>
-        //input의 값을 얻어온다
-        let numberInput = document.getElementById(numberInput).value;
-        if( numberInput == Number(numberInput))
+        //btn을 클릭했을 때 이벤트가 발생하도록 하기
+        document.getElementById("btn").addEventListener("click", ()=>{
         
+
+           //input에 작성하는 다양한 값을 얻어오기 
+            let numberInput=document.getElementById("numberInput").value;
+
+
+            //i라는 변수를 numberInput으로 지정하고 숫자로 지정
+            let i = Number(numberInput);
+
+            //만약 i가 2로 나눴을때 0 인경우 그 결과를 짝수라고 지정
+            //만약 i가 2로 나눴을때 1 인경우 그 결과를 홀수라고 지정    
+            //input값의 결과를 알림창을 통해 나타내려고 함.
+            
+            if(i % 2 == 0 && i > 0) {
+                alert (`${i}는 짝수입니다.`);
+            } else if (i % 2 == 1){
+                alert (`${i}는 홀수입니다.`);
+            } else { 
+                alert ("다시 입력해주세요");  
+            
+            }
+
+        });
+
+        
+
+
+
+
 
 
     </script>

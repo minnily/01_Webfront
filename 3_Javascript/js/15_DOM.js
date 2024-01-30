@@ -98,7 +98,7 @@ document.querySelector("#btn1").addEventListener("click", () => {
             console.log(test2.parentElement);
 
             //#test2의 이전 형제 요소
-            console.log(test2.previousElementSibling);
+            console.log(test2.);
 
             //#test2의 다음 형제 요소
             console.log(test2.nextElementSibling);

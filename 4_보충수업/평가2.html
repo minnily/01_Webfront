@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가2</title>
+    <link rel="stylesheet" href="/평가2.css">
+</head>
+
+<body>
+    <header>
+        <section class="section1">
+            <div>
+                <b>너비: </b> <input type="text" class="width"> px           
+                <br>
+                <b >글자크기 : </b> <input type="text" class="font_size"> px 
+                <br>
+                <b>글자색 : </b> <input type="text" class="color">
+            </div>   
+        </section>
+
+        <br><br>
+
+        <section class="section2">
+            <div>
+                <b>높이 : </b> <input type="text" class="height"> px 
+                <br>
+                <b>굵기 : </b> 보통 <input type="radio" name="fw" value= "normal"> 굵게 <input type="radio" >
+                <br>
+                <b>배경색 : </b> <input type="text" name="fw" value= "bold" class="background"> 
+            </div>
+        </section>
+    </header> 
+
+    <br><br>
+
+    <main> 
+        <div class = "input_div">  
+            <b> 가로정렬 : </b> 왼쪽 <input type="radio" name="align-row"value= "flex-start"> 가운데 <input type="radio"> 오른쪽 <input type="radio">          
+            <br>
+            <b> 세로정렬 : </b>
+                위 <input type="radio"> 가운데 <input type="radio" name="align-col"value= "center"> 아래 <input type="radio">                 
+            <br>
+            <b>출력 문자열 : </b>
+                <input type="text" class="text">                  
+            <br>
+        </div> 
+                 
+        <button id="btn">적용하기</button>
+            
+        <div id="box">Hello World!</div>
+        
+    </main>      
+    
+    <!-- table tr-th/td로 다시 만들어보기 
+    
+    name= , value를 꼭 지정해야함-->
+
+
+ <script src="/평가2.js"></script> 
+</body>
+
+</html>

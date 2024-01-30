@@ -23,63 +23,25 @@
 
     <script>
         
-        //적용버튼을 눌렀을 때 얻어온 값이 적용되게 하기
-       
-        
-        // 태그 input에 있는 값을 얻어오기
-       
-        
-        //태그 안에 쓸 내용의 input 값을btn 얻어오기
-       
-
-        //color 색상에 input 값을 얻어오기
-        
-        //     let tagName = document.getElementById("tagName").value; 
-            
-        //     let tagInnerText =document.getElementById("tagInnerText").value;
-            
-        //     let colorName =document.getElementById("colorName").value;
-        
-    
-        //     const btn = document.querySelector("#btn").addEventListener ("click", ()=>{
-            
-            
-        //     let btn = "(tagName, tagInnerText)colorName.value";
-
-        //     let tagName= "tagName.value";
-
-        //     let tagInnerText = "'(' + value + ')'";
-
-        //     let colorName = "value.style.color";
-
-        //     document.getElementById("result").innerText = btn;
-
-        // })
-
-        
-
-
-        // 적용되면 그 결과로 섹션을 통해 나타나게 하기
-
-
-
-
+      
             document.getElementById("btn").addEventListener("click", () =>{
 
             
-            let tagName = document.getElementById("tagName").value;
-            
+                let tagName = document.getElementById("tagName").value;
+                
 
-            let tagInnerText =document.getElementById("tagInnerText").value;
+                let tagInnerText =document.getElementById("tagInnerText").value;
 
 
-            let colorName =document.getElementById("colorName").value;
-             
-            
-            let btn = (tagName += tagInnerText)
+                let colorName =document.getElementById("colorName").value;
+                
+                
+                let all = `<${tagName}>${tagInnerText}</${tagName}>`;
 
-            document.getElementById("result").innerText=btn;
-
+                document.getElementById("result").innerHTML=all;
+                document.getElementById("result").style.color=colorName;
+                
+                console.log(all)
         });
         
    
