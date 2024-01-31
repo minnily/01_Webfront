@@ -1,0 +1,42 @@
+*{box-sizing: border-box;}
+
+body{display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+table{
+    
+    width: 600px;
+    height: 400px;
+}
+
+.width{
+    width: 100px;
+}
+
+.height{
+    width: 100px;
+}
+
+.font_size{
+    width: 88px;
+}
+
+.color{
+    width: 230px;
+}
+
+.text{
+    width: 450px;
+}
+
+.btnDIV{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#btn{width: 100px;}
+
+#box{border: 1px solid black;}

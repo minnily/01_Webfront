@@ -25,6 +25,7 @@ document.getElementById("btn").addEventListener("click",()=>{
         container.append(box);
         //container애 box라는 input요소를 붙여준다
     }
+    
 
     //infut에 아무것도 입력하지 않았을때 알림창 띄우기
     if(inputV==""){
@@ -35,36 +36,39 @@ document.getElementById("btn").addEventListener("click",()=>{
 
 });
 
+
+
 document.getElementById("sumBtn").addEventListener("click",()=>{
 
     //새로 생성된 input값인 box요소안의 값을 얻어오기
     //변수 만들기
-    let inputBox = document.querySelectorAll(".inputBox").value;
+    const inputBox = document.querySelectorAll("#inputBox");
+   
+    let sum= 0;
+    //for문을 사용하여 box요소안의 값을 더하기
     
-    //for문을 사용하여 box요소안의 값이 더해지기
-    //input박스가 늘어나는 수의 값만큼 더해지는 경우
+    //생성된 inputBox(inputBox에 넣은 값)가 
+    //input에 넣은 i의 수만큼 증가할 때마다 
+    //생성된 inputbox안에 넣은 값을 반복하여 더한다.
+    for(let i =0; i < inputBox.length; i++){
+
+        //sum 이라는 변수는 i개의 inputBox 값의 합이다.
+        
+        
+        sum += Number(inputBox[i].value);
+        console.log([inputBox[i].value]);
+
+        document.getElementById("result").innerText= sum;
+        //sum(i개의 inputBox 값의 합)을 result로 나타내게 한다.
+        //문서에서 result를 얻어온 후 innertext는 sum과 같음을 명시한다.
+        
+        
+       console.log(sum);
+
     
-    for(let i =1; i <= inputBox; i++){
-        sum[inputBox[i]];
-    }
-    console.log(inputBox);
-
-    // for문을 통해 나온 결과 값을 결과 값 옆에 나오게 함  
-    document.getElementById("result").innerText = ;
-    
+    };
     
 
-    console.log(result);
-    //더해진 값이 결과로 나타나기
-    //sumBtn의 결과가 result에 나타나게 하는 값을 나타내게 하기 
+});
     
-
-    });
-    
-
-
-
-
-
-
 
