@@ -24,21 +24,28 @@ document.querySelector("#createBtn").addEventListener("click", ()=>{
         num.classList.add("num"); //div에 class를 설정하는 방법 
         lottoBoard.append(num); //lottoBoard에 자식요소로 num이라는
                                 //클래스를 가진 div를 넣는방법
+        
+        num.addEventListener("click",(e)=>{
+             if
+            
+            
+           
+
+            
+        })
+
+
         document.getElementById("lottoBoard").append(num);
         //추가된 num을 lottoBoard에 나타나게 추가하는방법
 
+        
+        
+        
         //num을 클릭했을 때 배경색이 변하게 하는 방법
-        document.querySelector(".num").addEventListener("click",()=>{
-             
-            if(num.traget.value <= 5){
-                num.style.backgroundColor = "orange";
-            }else{ alert("더 이상 클릭할 수 없습니다");}
-
-            console.log(num);
-        }
+       
         
          
-    )}
+    }
 
     
     
