@@ -15,7 +15,7 @@ document.querySelector("#createBtn").addEventListener("click",()=>{
                e.target.classList.contains("active")
                e.target.classList.remove("active")
             }else{ 
-                //num class를 active라고 줄건데 그 클래스가 있다면 클릭을 제거하게 할거다
+                //num class를 active라고 줄건데 그 클래스가 있다면 클릭 시 클래스를 제거(재클릭시 없어지게하기)
                 //num의 길이가 6이상일때 알림창을 통해 안내할거다
             }
             const count=document.getElementsByClassName("active").length;
@@ -23,7 +23,7 @@ document.querySelector("#createBtn").addEventListener("click",()=>{
             if(count >= 6){ 
             alert("최대 5개까지 선택할 수 있습니다.")
             }else{
-                e.target.classList.add("active");
+                e.target.classList.add("active"); //나머지에 active라는 클래스를 주겠다
             }
 
         })
